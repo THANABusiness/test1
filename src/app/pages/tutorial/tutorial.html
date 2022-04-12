@@ -47,6 +47,8 @@
     </ion-slide>
   </ion-slides>
   
+</ion-content>
+
 
   <ion-header>
   <ion-toolbar>
@@ -60,7 +62,20 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  
+  import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
+@Component({
+  ...
+})
+export class LoginComponent {
 
+  constructor(private router: Router){}
+
+  navigate(){
+    this.router.navigate(['/detail'])
+  }
+}
+  
 </ion-content>
