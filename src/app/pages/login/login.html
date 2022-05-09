@@ -1,254 +1,1596 @@
-<ion-content>
-<div class="main-content">
- <body class="bg-default">
-  <div class="main-content">
-    <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
-      <div class="container px-4">
-        <a class="navbar-brand" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-          AUTO Business</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse-main">
-          <!-- Collapse header -->
-          <div class="navbar-collapse-header d-md-none">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="../index.html">
-                  AUTO Business
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Navbar items -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-planet"></i>
-                <span class="nav-link-inner--text">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-circle-08"></i>
-                <span class="nav-link-inner--text">Register</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-key-25"></i>
-                <span class="nav-link-inner--text">Login</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-single-02"></i>
-                <span class="nav-link-inner--text">Profile</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Header -->
-    <div class="header bg-gradient-primary py-7 py-lg-8">
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="https://ttokbet.com/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://ttokbet.com/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ttokbet.com/assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://ttokbet.com/assets/css/formValidation.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:400,500,600|Roboto+Mono:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://ttokbet.com/assets/css/style.css">
+  <link rel="stylesheet" href="https://ttokbet.com/assets/css/style-addon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" integrity="sha512-wJgJNTBBkLit7ymC6vvzM1EcSWeM9mmOu+1USHaRBbHkm6W9EgM0HY27+UtUaprntaYQJF75rc8gjxllKs5OIQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://ttokbet.com/assets/js/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://ttokbet.com/assets/js/slick/slick-theme.css">
+  <style type="text/css">
+    .modal-dialog .modal-content {
+      padding: 15px;
+    }
 
-      <div class="separator separator-bottom separator-skew zindex-100">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
-    </div>
-    <!-- Page content -->
-    <div class="container mt--8 pb-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-7">
-          
-         
+    .navbar .navbar-brand {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  </style>
+  <style type="text/css">
+    .card-table .card-table-title {
+      margin: 5px 0px 0px 0px;
+    }
+
+    .yeekee-block {
+      position: relative;
+      width: 12.5%;
+      padding: 4px;
+      border-radius: 5px;
+      color: #48526E;
+      flex: 0 0 12.5%;
+      max-width: 12.5%;
+      cursor: pointer;
+      border: 2px solid #161A26;
+      background-color: #282F44;
+    }
+
+    .yeekee-block-active {
+      border: 2px solid #fff;
+    }
+
+    .yeekee-not-found {
+      color: #48526E !important;
+    }
+
+    .yeekee-open {
+      color: #ffffff !important;
+    }
+
+    .yeekee-reject {
+      color: #FF5160 !important;
+    }
+
+    .yeekee-result {
+      color: #E8BD70 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper msi-container">
+    <nav class="navbar justify-content-between">
+      
+      <a class="lang-toggler lang-th" href="#" data-toggle="modal" data-target="#langModal" style="margin-right: 10px;">
+        ภาษาไทย
+      </a>
+    </nav>
+    <div class="container">
+      <div class="row" style="text-align: center;margin: 36px 0px 16px 0px;">
+        <div class="col-12">
+          <h3><span>KOKO</span><span style="color: #E8BD70">VA</span></h3>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Footer -->
- 
-  </body>
-  
-</div>
-</ion-content>
-  
-<ion-content>
-          <div>
-  
-<body class="bg-default" display: non;>
-  <div class="main-content">
-    <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
-      <div class="container px-4">
-        <a class="navbar-brand" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-          AUTO Business</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse-main">
-          <!-- Collapse header -->
-          <div class="navbar-collapse-header d-md-none">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="../index.html">
-                  AUTO Business
-                </a>
+      <form method="POST" action="https://ttokbet.com/login" enctype="application/x-www-form-urlencoded" class="form-login form-horizontal" name="form-login" id="form-login" role="form">
+        <input type="hidden" name="_token" value="{% csrf %}">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fal fa-user-crown"></i></span>
+                </div>
+                <input type="text" class="form-control" maxlength="16" placeholder="ชื่อผู้ใช้" name="username" id="username" style="font-size: 1rem;" value="">
               </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                  <span></span>
-                  <span></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fal fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" maxlength="24" placeholder="รหัสผ่าน" name="password" id="password" style="font-size: 1rem;" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-orange btn-block btn-icon-suffix">
+                <span style="font-size:1rem;">เข้าสู่ระบบ</span>
+                <i class="fal fa-sign-in-alt"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="form-element-block">
+          <ul class="list-unstyled">
+            <li><a class="icon-prepend" href="https://ttokbet.com/forgot">
+                <i class="fal fa-question-square"></i>ลืมรหัสผ่าน?
+              </a>
+              &nbsp;<a class="icon-prepend" href="#" data-toggle="modal" data-target="#regurationModal">
+                <i class="fal fa-info-square"></i>กฎกติกาและข้อบังคับ
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </form>
+      <div class="col">
+        <div class="col-12">
+          <div class="card-table grid-prize">
+            <div class="card-table-header">
+              <div class="title text-left" style="font-size:1rem;">
+                <i class="far fa-star"></i> ทดลองเล่น
+              </div>
+            </div>
+            <section class="regular slider">
+              <div>
+                <a href="https://ttokbet.com/demo/evoplay" target="_blank"><img src="https://ttokbet.com/assets/img/demo/evoplay.png" width="100%"></a>
+              </div>
+              <div>
+                <a href="https://ttokbet.com/demo/fghub" target="_blank"><img src="https://ttokbet.com/assets/img/demo/fghub.png" width="100%"></a>
+              </div>
+              <div>
+                <a href="https://ttokbet.com/demo/pg" target="_blank"><img src="https://ttokbet.com/assets/img/demo/pg.png" width="100%"></a>
+              </div>
+              <div>
+                <a href="https://ttokbet.com/demo/nextspin" target="_blank"><img src="https://ttokbet.com/assets/img/demo/nextspin.png" width="100%"></a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-1.svg" class="mini-flag">
+                    หวยรัฐบาล
+                  </div>
+                  <div class="date text-right">
+                    2 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">รางวัลที่ 1</h4>
+                      <strong class="lotto-prize-number first-prize text-center">
+                        658642
+                      </strong>
+                    </div>
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สองตัวล่าง</h4>
+                      <strong class="lotto-prize-number text-center">
+                        09
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สามตัวหน้า</h4>
+                      <strong class="lotto-prize-number text-center">
+                        778 518
+                      </strong>
+                    </div>
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สามตัวหลัง</h4>
+                      <strong class="lotto-prize-number text-center">
+                        041 325
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-2.svg" class="mini-flag">
+                    หวย ธกส.
+                  </div>
+                  <div class="date text-right">
+                    16 เม.ย. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สามตัวบน</h4>
+                      <strong class="lotto-prize-number text-center">
+                        186
+                      </strong>
+                    </div>
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สองตัวล่าง</h4>
+                      <strong class="lotto-prize-number text-center">
+                        53
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-3.svg" class="mini-flag">
+                    หวยออมสิน
+                  </div>
+                  <div class="date text-right">
+                    2 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สามตัวบน</h4>
+                      <strong class="lotto-prize-number text-center">
+                        799
+                      </strong>
+                    </div>
+                    <div class="col">
+                      <h4 class="card-table-title text-center">สองตัวล่าง</h4>
+                      <strong class="lotto-prize-number text-center">
+                        68
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-4.svg" class="mini-flag">
+                    หวยรัฐบาล (ชุด)
+                  </div>
+                  <div class="date text-right">
+                    2 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">
+                        เลขชุดหกตัว
+                      </h4>
+                      <strong class="lotto-prize-number text-center">
+                        658642
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-5.svg" class="mini-flag">
+                    หวยลาว (ชุด)
+                  </div>
+                  <div class="date text-right">
+                    9 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">
+                        เลขชุดสี่ตัว
+                      </h4>
+                      <strong class="lotto-prize-number text-center">
+                        2713
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table list-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    หวยหุ้นไทย
+                  </div>
+                  <div class="date text-right">
+                    9 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3">
+                      <h4 class="card-table-title text-center">สามตัวบน</h4>
+                    </div>
+                    <div class="col-3">
+                      <h4 class="card-table-title text-center">สองตัวล่าง</h4>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-6.svg" class="mini-flag">
+                      หุ้นไทยรอบเช้า
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        302
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        56
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-8.svg" class="mini-flag">
+                      หุ้นไทยรอบบ่าย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        706
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        52
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-9.svg" class="mini-flag">
+                      หุ้นไทยรอบเย็น
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        349
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        09
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-7.svg" class="mini-flag graysale">
+                      หุ้นไทยรอบเที่ยง
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table list-prize">
+                <div class="card-table-header">
+                  <div class="title text-left" style="font-size:1rem;">
+                    หวยหุ้นต่างประเทศ
+                  </div>
+                  <div class="date text-right">
+                    9 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3">
+                      <h4 class="card-table-title text-center">
+                        สามตัวบน
+                      </h4>
+                    </div>
+                    <div class="col-3">
+                      <h4 class="card-table-title text-center">
+                        สองตัวล่าง
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-10.svg" class="mini-flag">
+                      หวยเวียดนาม / ฮานอย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        659
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        56
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-12.svg" class="mini-flag">
+                      หุ้นเกาหลี
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        449
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        30
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-13.svg" class="mini-flag">
+                      นิเคอิรอบเช้า
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        030
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        26
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-14.svg" class="mini-flag">
+                      นิเคอิรอบบ่าย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        934
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        22
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-17.svg" class="mini-flag">
+                      จีนรอบเช้า
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        269
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        19
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-18.svg" class="mini-flag">
+                      จีนรอบบ่าย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        563
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        25
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-19.svg" class="mini-flag">
+                      หุ้นไต้หวัน
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        892
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        28
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-20.svg" class="mini-flag">
+                      หุ้นสิงค์โปร
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        507
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        82
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-21.svg" class="mini-flag">
+                      หุ้นอียิปต์
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        672
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        50
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-27.svg" class="mini-flag">
+                      หวยลาว
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        713
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong class="lotto-prize-number">
+                        27
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-22.svg" class="mini-flag">
+                      หุ้นเยอรมัน
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#b9efb7;">
+                        เปิดรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#b9efb7;">
+                        เปิดรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-23.svg" class="mini-flag">
+                      หุ้นอังกฤษ
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#b9efb7;">
+                        เปิดรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#b9efb7;">
+                        เปิดรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-11.svg" class="mini-flag graysale">
+                      หวยฮานอยพิเศษ
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-15.svg" class="mini-flag graysale">
+                      ฮั่งเส็งรอบเช้า
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-16.svg" class="mini-flag graysale">
+                      ฮั่งเส็งรอบบ่าย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-24.svg" class="mini-flag graysale">
+                      หุ้นรัสเซีย
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-25.svg" class="mini-flag graysale">
+                      หุ้นดาวน์โจน
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-26.svg" class="mini-flag graysale">
+                      หวยมาเลย์
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                  <div class="row table-row">
+                    <div class="col-6" style="font-size:0.85rem; color: #48526E;">
+                      <img src="https://ttokbet.com/assets/img/flag/mini-flag-28.svg" class="mini-flag graysale">
+                      หวยลาวสตาร์
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                    <div class="col-3 text-center">
+                      <strong style="display: block;font-size:0.85rem;color:#48526E;">
+                        ไม่มีรอบ
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-table grid-prize">
+                <div class="card-table-header">
+                  <div class="title text-left">
+                    <img src="https://ttokbet.com/assets/img/flag/mini-flag-tb.svg" class="mini-flag">
+                    <span id="yeekee_name_result">จับยี่กีรอบที่ 62</span>
+                  </div>
+                  <div class="date text-right">
+                    9 พ.ค. 2565
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="card-table-title text-center">
+                        สามตัวบน
+                      </h4>
+                      <div id="yeekee_show_result1">
+                        <strong class="lotto-prize-number text-center">
+                          107
+                        </strong>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h4 class="card-table-title text-center">
+                        สองตัวล่าง
+                      </h4>
+                      <div id="yeekee_show_result2">
+                        <strong class="lotto-prize-number text-center">
+                          83
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="yeekee_block_group" class="row justify-content-center" style="text-align: center;margin-top:10px;">
+                    <div id="yeekee_result_1" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">1
+                    </div>
+                    <input type="hidden" id="yeekee_name_1" value="จับยี่กีรอบที่ 1" />
+                    <input type="hidden" id="yeekee_status_1" value="3" />
+                    <input type="hidden" id="yeekee_result3_1" value="737" />
+                    <input type="hidden" id="yeekee_result2_1" value="82" />
+                    <div id="yeekee_result_2" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">2
+                    </div>
+                    <input type="hidden" id="yeekee_name_2" value="จับยี่กีรอบที่ 2" />
+                    <input type="hidden" id="yeekee_status_2" value="3" />
+                    <input type="hidden" id="yeekee_result3_2" value="635" />
+                    <input type="hidden" id="yeekee_result2_2" value="74" />
+                    <div id="yeekee_result_3" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">3
+                    </div>
+                    <input type="hidden" id="yeekee_name_3" value="จับยี่กีรอบที่ 3" />
+                    <input type="hidden" id="yeekee_status_3" value="3" />
+                    <input type="hidden" id="yeekee_result3_3" value="983" />
+                    <input type="hidden" id="yeekee_result2_3" value="20" />
+                    <div id="yeekee_result_4" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">4
+                    </div>
+                    <input type="hidden" id="yeekee_name_4" value="จับยี่กีรอบที่ 4" />
+                    <input type="hidden" id="yeekee_status_4" value="3" />
+                    <input type="hidden" id="yeekee_result3_4" value="167" />
+                    <input type="hidden" id="yeekee_result2_4" value="41" />
+                    <div id="yeekee_result_5" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">5
+                    </div>
+                    <input type="hidden" id="yeekee_name_5" value="จับยี่กีรอบที่ 5" />
+                    <input type="hidden" id="yeekee_status_5" value="3" />
+                    <input type="hidden" id="yeekee_result3_5" value="862" />
+                    <input type="hidden" id="yeekee_result2_5" value="33" />
+                    <div id="yeekee_result_6" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">6
+                    </div>
+                    <input type="hidden" id="yeekee_name_6" value="จับยี่กีรอบที่ 6" />
+                    <input type="hidden" id="yeekee_status_6" value="3" />
+                    <input type="hidden" id="yeekee_result3_6" value="754" />
+                    <input type="hidden" id="yeekee_result2_6" value="01" />
+                    <div id="yeekee_result_7" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">7
+                    </div>
+                    <input type="hidden" id="yeekee_name_7" value="จับยี่กีรอบที่ 7" />
+                    <input type="hidden" id="yeekee_status_7" value="3" />
+                    <input type="hidden" id="yeekee_result3_7" value="849" />
+                    <input type="hidden" id="yeekee_result2_7" value="22" />
+                    <div id="yeekee_result_8" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">8
+                    </div>
+                    <input type="hidden" id="yeekee_name_8" value="จับยี่กีรอบที่ 8" />
+                    <input type="hidden" id="yeekee_status_8" value="3" />
+                    <input type="hidden" id="yeekee_result3_8" value="990" />
+                    <input type="hidden" id="yeekee_result2_8" value="48" />
+                    <div id="yeekee_result_9" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">9
+                    </div>
+                    <input type="hidden" id="yeekee_name_9" value="จับยี่กีรอบที่ 9" />
+                    <input type="hidden" id="yeekee_status_9" value="3" />
+                    <input type="hidden" id="yeekee_result3_9" value="492" />
+                    <input type="hidden" id="yeekee_result2_9" value="25" />
+                    <div id="yeekee_result_10" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">10
+                    </div>
+                    <input type="hidden" id="yeekee_name_10" value="จับยี่กีรอบที่ 10" />
+                    <input type="hidden" id="yeekee_status_10" value="3" />
+                    <input type="hidden" id="yeekee_result3_10" value="790" />
+                    <input type="hidden" id="yeekee_result2_10" value="64" />
+                    <div id="yeekee_result_11" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">11
+                    </div>
+                    <input type="hidden" id="yeekee_name_11" value="จับยี่กีรอบที่ 11" />
+                    <input type="hidden" id="yeekee_status_11" value="3" />
+                    <input type="hidden" id="yeekee_result3_11" value="906" />
+                    <input type="hidden" id="yeekee_result2_11" value="78" />
+                    <div id="yeekee_result_12" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">12
+                    </div>
+                    <input type="hidden" id="yeekee_name_12" value="จับยี่กีรอบที่ 12" />
+                    <input type="hidden" id="yeekee_status_12" value="3" />
+                    <input type="hidden" id="yeekee_result3_12" value="700" />
+                    <input type="hidden" id="yeekee_result2_12" value="04" />
+                    <div id="yeekee_result_13" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">13
+                    </div>
+                    <input type="hidden" id="yeekee_name_13" value="จับยี่กีรอบที่ 13" />
+                    <input type="hidden" id="yeekee_status_13" value="3" />
+                    <input type="hidden" id="yeekee_result3_13" value="777" />
+                    <input type="hidden" id="yeekee_result2_13" value="42" />
+                    <div id="yeekee_result_14" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">14
+                    </div>
+                    <input type="hidden" id="yeekee_name_14" value="จับยี่กีรอบที่ 14" />
+                    <input type="hidden" id="yeekee_status_14" value="3" />
+                    <input type="hidden" id="yeekee_result3_14" value="516" />
+                    <input type="hidden" id="yeekee_result2_14" value="95" />
+                    <div id="yeekee_result_15" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">15
+                    </div>
+                    <input type="hidden" id="yeekee_name_15" value="จับยี่กีรอบที่ 15" />
+                    <input type="hidden" id="yeekee_status_15" value="3" />
+                    <input type="hidden" id="yeekee_result3_15" value="019" />
+                    <input type="hidden" id="yeekee_result2_15" value="23" />
+                    <div id="yeekee_result_16" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">16
+                    </div>
+                    <input type="hidden" id="yeekee_name_16" value="จับยี่กีรอบที่ 16" />
+                    <input type="hidden" id="yeekee_status_16" value="3" />
+                    <input type="hidden" id="yeekee_result3_16" value="066" />
+                    <input type="hidden" id="yeekee_result2_16" value="78" />
+                    <div id="yeekee_result_17" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">17
+                    </div>
+                    <input type="hidden" id="yeekee_name_17" value="จับยี่กีรอบที่ 17" />
+                    <input type="hidden" id="yeekee_status_17" value="3" />
+                    <input type="hidden" id="yeekee_result3_17" value="376" />
+                    <input type="hidden" id="yeekee_result2_17" value="13" />
+                    <div id="yeekee_result_18" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">18
+                    </div>
+                    <input type="hidden" id="yeekee_name_18" value="จับยี่กีรอบที่ 18" />
+                    <input type="hidden" id="yeekee_status_18" value="3" />
+                    <input type="hidden" id="yeekee_result3_18" value="476" />
+                    <input type="hidden" id="yeekee_result2_18" value="04" />
+                    <div id="yeekee_result_19" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">19
+                    </div>
+                    <input type="hidden" id="yeekee_name_19" value="จับยี่กีรอบที่ 19" />
+                    <input type="hidden" id="yeekee_status_19" value="3" />
+                    <input type="hidden" id="yeekee_result3_19" value="005" />
+                    <input type="hidden" id="yeekee_result2_19" value="80" />
+                    <div id="yeekee_result_20" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">20
+                    </div>
+                    <input type="hidden" id="yeekee_name_20" value="จับยี่กีรอบที่ 20" />
+                    <input type="hidden" id="yeekee_status_20" value="3" />
+                    <input type="hidden" id="yeekee_result3_20" value="131" />
+                    <input type="hidden" id="yeekee_result2_20" value="10" />
+                    <div id="yeekee_result_21" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">21
+                    </div>
+                    <input type="hidden" id="yeekee_name_21" value="จับยี่กีรอบที่ 21" />
+                    <input type="hidden" id="yeekee_status_21" value="3" />
+                    <input type="hidden" id="yeekee_result3_21" value="340" />
+                    <input type="hidden" id="yeekee_result2_21" value="43" />
+                    <div id="yeekee_result_22" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">22
+                    </div>
+                    <input type="hidden" id="yeekee_name_22" value="จับยี่กีรอบที่ 22" />
+                    <input type="hidden" id="yeekee_status_22" value="3" />
+                    <input type="hidden" id="yeekee_result3_22" value="578" />
+                    <input type="hidden" id="yeekee_result2_22" value="56" />
+                    <div id="yeekee_result_23" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">23
+                    </div>
+                    <input type="hidden" id="yeekee_name_23" value="จับยี่กีรอบที่ 23" />
+                    <input type="hidden" id="yeekee_status_23" value="3" />
+                    <input type="hidden" id="yeekee_result3_23" value="907" />
+                    <input type="hidden" id="yeekee_result2_23" value="28" />
+                    <div id="yeekee_result_24" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">24
+                    </div>
+                    <input type="hidden" id="yeekee_name_24" value="จับยี่กีรอบที่ 24" />
+                    <input type="hidden" id="yeekee_status_24" value="3" />
+                    <input type="hidden" id="yeekee_result3_24" value="135" />
+                    <input type="hidden" id="yeekee_result2_24" value="10" />
+                    <div id="yeekee_result_25" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">25
+                    </div>
+                    <input type="hidden" id="yeekee_name_25" value="จับยี่กีรอบที่ 25" />
+                    <input type="hidden" id="yeekee_status_25" value="3" />
+                    <input type="hidden" id="yeekee_result3_25" value="269" />
+                    <input type="hidden" id="yeekee_result2_25" value="39" />
+                    <div id="yeekee_result_26" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">26
+                    </div>
+                    <input type="hidden" id="yeekee_name_26" value="จับยี่กีรอบที่ 26" />
+                    <input type="hidden" id="yeekee_status_26" value="3" />
+                    <input type="hidden" id="yeekee_result3_26" value="544" />
+                    <input type="hidden" id="yeekee_result2_26" value="75" />
+                    <div id="yeekee_result_27" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">27
+                    </div>
+                    <input type="hidden" id="yeekee_name_27" value="จับยี่กีรอบที่ 27" />
+                    <input type="hidden" id="yeekee_status_27" value="3" />
+                    <input type="hidden" id="yeekee_result3_27" value="737" />
+                    <input type="hidden" id="yeekee_result2_27" value="75" />
+                    <div id="yeekee_result_28" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">28
+                    </div>
+                    <input type="hidden" id="yeekee_name_28" value="จับยี่กีรอบที่ 28" />
+                    <input type="hidden" id="yeekee_status_28" value="3" />
+                    <input type="hidden" id="yeekee_result3_28" value="489" />
+                    <input type="hidden" id="yeekee_result2_28" value="18" />
+                    <div id="yeekee_result_29" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">29
+                    </div>
+                    <input type="hidden" id="yeekee_name_29" value="จับยี่กีรอบที่ 29" />
+                    <input type="hidden" id="yeekee_status_29" value="3" />
+                    <input type="hidden" id="yeekee_result3_29" value="661" />
+                    <input type="hidden" id="yeekee_result2_29" value="85" />
+                    <div id="yeekee_result_30" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">30
+                    </div>
+                    <input type="hidden" id="yeekee_name_30" value="จับยี่กีรอบที่ 30" />
+                    <input type="hidden" id="yeekee_status_30" value="3" />
+                    <input type="hidden" id="yeekee_result3_30" value="249" />
+                    <input type="hidden" id="yeekee_result2_30" value="66" />
+                    <div id="yeekee_result_31" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">31
+                    </div>
+                    <input type="hidden" id="yeekee_name_31" value="จับยี่กีรอบที่ 31" />
+                    <input type="hidden" id="yeekee_status_31" value="3" />
+                    <input type="hidden" id="yeekee_result3_31" value="119" />
+                    <input type="hidden" id="yeekee_result2_31" value="74" />
+                    <div id="yeekee_result_32" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">32
+                    </div>
+                    <input type="hidden" id="yeekee_name_32" value="จับยี่กีรอบที่ 32" />
+                    <input type="hidden" id="yeekee_status_32" value="3" />
+                    <input type="hidden" id="yeekee_result3_32" value="054" />
+                    <input type="hidden" id="yeekee_result2_32" value="16" />
+                    <div id="yeekee_result_33" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">33
+                    </div>
+                    <input type="hidden" id="yeekee_name_33" value="จับยี่กีรอบที่ 33" />
+                    <input type="hidden" id="yeekee_status_33" value="3" />
+                    <input type="hidden" id="yeekee_result3_33" value="040" />
+                    <input type="hidden" id="yeekee_result2_33" value="22" />
+                    <div id="yeekee_result_34" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">34
+                    </div>
+                    <input type="hidden" id="yeekee_name_34" value="จับยี่กีรอบที่ 34" />
+                    <input type="hidden" id="yeekee_status_34" value="3" />
+                    <input type="hidden" id="yeekee_result3_34" value="785" />
+                    <input type="hidden" id="yeekee_result2_34" value="42" />
+                    <div id="yeekee_result_35" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">35
+                    </div>
+                    <input type="hidden" id="yeekee_name_35" value="จับยี่กีรอบที่ 35" />
+                    <input type="hidden" id="yeekee_status_35" value="3" />
+                    <input type="hidden" id="yeekee_result3_35" value="284" />
+                    <input type="hidden" id="yeekee_result2_35" value="29" />
+                    <div id="yeekee_result_36" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">36
+                    </div>
+                    <input type="hidden" id="yeekee_name_36" value="จับยี่กีรอบที่ 36" />
+                    <input type="hidden" id="yeekee_status_36" value="3" />
+                    <input type="hidden" id="yeekee_result3_36" value="233" />
+                    <input type="hidden" id="yeekee_result2_36" value="86" />
+                    <div id="yeekee_result_37" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">37
+                    </div>
+                    <input type="hidden" id="yeekee_name_37" value="จับยี่กีรอบที่ 37" />
+                    <input type="hidden" id="yeekee_status_37" value="3" />
+                    <input type="hidden" id="yeekee_result3_37" value="336" />
+                    <input type="hidden" id="yeekee_result2_37" value="61" />
+                    <div id="yeekee_result_38" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">38
+                    </div>
+                    <input type="hidden" id="yeekee_name_38" value="จับยี่กีรอบที่ 38" />
+                    <input type="hidden" id="yeekee_status_38" value="3" />
+                    <input type="hidden" id="yeekee_result3_38" value="758" />
+                    <input type="hidden" id="yeekee_result2_38" value="21" />
+                    <div id="yeekee_result_39" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">39
+                    </div>
+                    <input type="hidden" id="yeekee_name_39" value="จับยี่กีรอบที่ 39" />
+                    <input type="hidden" id="yeekee_status_39" value="3" />
+                    <input type="hidden" id="yeekee_result3_39" value="748" />
+                    <input type="hidden" id="yeekee_result2_39" value="17" />
+                    <div id="yeekee_result_40" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">40
+                    </div>
+                    <input type="hidden" id="yeekee_name_40" value="จับยี่กีรอบที่ 40" />
+                    <input type="hidden" id="yeekee_status_40" value="3" />
+                    <input type="hidden" id="yeekee_result3_40" value="491" />
+                    <input type="hidden" id="yeekee_result2_40" value="34" />
+                    <div id="yeekee_result_41" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">41
+                    </div>
+                    <input type="hidden" id="yeekee_name_41" value="จับยี่กีรอบที่ 41" />
+                    <input type="hidden" id="yeekee_status_41" value="3" />
+                    <input type="hidden" id="yeekee_result3_41" value="388" />
+                    <input type="hidden" id="yeekee_result2_41" value="46" />
+                    <div id="yeekee_result_42" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">42
+                    </div>
+                    <input type="hidden" id="yeekee_name_42" value="จับยี่กีรอบที่ 42" />
+                    <input type="hidden" id="yeekee_status_42" value="3" />
+                    <input type="hidden" id="yeekee_result3_42" value="790" />
+                    <input type="hidden" id="yeekee_result2_42" value="13" />
+                    <div id="yeekee_result_43" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">43
+                    </div>
+                    <input type="hidden" id="yeekee_name_43" value="จับยี่กีรอบที่ 43" />
+                    <input type="hidden" id="yeekee_status_43" value="3" />
+                    <input type="hidden" id="yeekee_result3_43" value="219" />
+                    <input type="hidden" id="yeekee_result2_43" value="13" />
+                    <div id="yeekee_result_44" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">44
+                    </div>
+                    <input type="hidden" id="yeekee_name_44" value="จับยี่กีรอบที่ 44" />
+                    <input type="hidden" id="yeekee_status_44" value="3" />
+                    <input type="hidden" id="yeekee_result3_44" value="183" />
+                    <input type="hidden" id="yeekee_result2_44" value="80" />
+                    <div id="yeekee_result_45" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">45
+                    </div>
+                    <input type="hidden" id="yeekee_name_45" value="จับยี่กีรอบที่ 45" />
+                    <input type="hidden" id="yeekee_status_45" value="3" />
+                    <input type="hidden" id="yeekee_result3_45" value="596" />
+                    <input type="hidden" id="yeekee_result2_45" value="00" />
+                    <div id="yeekee_result_46" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">46
+                    </div>
+                    <input type="hidden" id="yeekee_name_46" value="จับยี่กีรอบที่ 46" />
+                    <input type="hidden" id="yeekee_status_46" value="3" />
+                    <input type="hidden" id="yeekee_result3_46" value="381" />
+                    <input type="hidden" id="yeekee_result2_46" value="53" />
+                    <div id="yeekee_result_47" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">47
+                    </div>
+                    <input type="hidden" id="yeekee_name_47" value="จับยี่กีรอบที่ 47" />
+                    <input type="hidden" id="yeekee_status_47" value="3" />
+                    <input type="hidden" id="yeekee_result3_47" value="691" />
+                    <input type="hidden" id="yeekee_result2_47" value="53" />
+                    <div id="yeekee_result_48" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">48
+                    </div>
+                    <input type="hidden" id="yeekee_name_48" value="จับยี่กีรอบที่ 48" />
+                    <input type="hidden" id="yeekee_status_48" value="3" />
+                    <input type="hidden" id="yeekee_result3_48" value="617" />
+                    <input type="hidden" id="yeekee_result2_48" value="69" />
+                    <div id="yeekee_result_49" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">49
+                    </div>
+                    <input type="hidden" id="yeekee_name_49" value="จับยี่กีรอบที่ 49" />
+                    <input type="hidden" id="yeekee_status_49" value="3" />
+                    <input type="hidden" id="yeekee_result3_49" value="931" />
+                    <input type="hidden" id="yeekee_result2_49" value="46" />
+                    <div id="yeekee_result_50" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">50
+                    </div>
+                    <input type="hidden" id="yeekee_name_50" value="จับยี่กีรอบที่ 50" />
+                    <input type="hidden" id="yeekee_status_50" value="3" />
+                    <input type="hidden" id="yeekee_result3_50" value="907" />
+                    <input type="hidden" id="yeekee_result2_50" value="36" />
+                    <div id="yeekee_result_51" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">51
+                    </div>
+                    <input type="hidden" id="yeekee_name_51" value="จับยี่กีรอบที่ 51" />
+                    <input type="hidden" id="yeekee_status_51" value="3" />
+                    <input type="hidden" id="yeekee_result3_51" value="933" />
+                    <input type="hidden" id="yeekee_result2_51" value="04" />
+                    <div id="yeekee_result_52" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">52
+                    </div>
+                    <input type="hidden" id="yeekee_name_52" value="จับยี่กีรอบที่ 52" />
+                    <input type="hidden" id="yeekee_status_52" value="3" />
+                    <input type="hidden" id="yeekee_result3_52" value="641" />
+                    <input type="hidden" id="yeekee_result2_52" value="62" />
+                    <div id="yeekee_result_53" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">53
+                    </div>
+                    <input type="hidden" id="yeekee_name_53" value="จับยี่กีรอบที่ 53" />
+                    <input type="hidden" id="yeekee_status_53" value="3" />
+                    <input type="hidden" id="yeekee_result3_53" value="253" />
+                    <input type="hidden" id="yeekee_result2_53" value="03" />
+                    <div id="yeekee_result_54" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">54
+                    </div>
+                    <input type="hidden" id="yeekee_name_54" value="จับยี่กีรอบที่ 54" />
+                    <input type="hidden" id="yeekee_status_54" value="3" />
+                    <input type="hidden" id="yeekee_result3_54" value="246" />
+                    <input type="hidden" id="yeekee_result2_54" value="94" />
+                    <div id="yeekee_result_55" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">55
+                    </div>
+                    <input type="hidden" id="yeekee_name_55" value="จับยี่กีรอบที่ 55" />
+                    <input type="hidden" id="yeekee_status_55" value="3" />
+                    <input type="hidden" id="yeekee_result3_55" value="415" />
+                    <input type="hidden" id="yeekee_result2_55" value="32" />
+                    <div id="yeekee_result_56" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">56
+                    </div>
+                    <input type="hidden" id="yeekee_name_56" value="จับยี่กีรอบที่ 56" />
+                    <input type="hidden" id="yeekee_status_56" value="3" />
+                    <input type="hidden" id="yeekee_result3_56" value="172" />
+                    <input type="hidden" id="yeekee_result2_56" value="01" />
+                    <div id="yeekee_result_57" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">57
+                    </div>
+                    <input type="hidden" id="yeekee_name_57" value="จับยี่กีรอบที่ 57" />
+                    <input type="hidden" id="yeekee_status_57" value="3" />
+                    <input type="hidden" id="yeekee_result3_57" value="792" />
+                    <input type="hidden" id="yeekee_result2_57" value="76" />
+                    <div id="yeekee_result_58" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">58
+                    </div>
+                    <input type="hidden" id="yeekee_name_58" value="จับยี่กีรอบที่ 58" />
+                    <input type="hidden" id="yeekee_status_58" value="3" />
+                    <input type="hidden" id="yeekee_result3_58" value="153" />
+                    <input type="hidden" id="yeekee_result2_58" value="90" />
+                    <div id="yeekee_result_59" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">59
+                    </div>
+                    <input type="hidden" id="yeekee_name_59" value="จับยี่กีรอบที่ 59" />
+                    <input type="hidden" id="yeekee_status_59" value="3" />
+                    <input type="hidden" id="yeekee_result3_59" value="777" />
+                    <input type="hidden" id="yeekee_result2_59" value="18" />
+                    <div id="yeekee_result_60" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">60
+                    </div>
+                    <input type="hidden" id="yeekee_name_60" value="จับยี่กีรอบที่ 60" />
+                    <input type="hidden" id="yeekee_status_60" value="3" />
+                    <input type="hidden" id="yeekee_result3_60" value="543" />
+                    <input type="hidden" id="yeekee_result2_60" value="49" />
+                    <div id="yeekee_result_61" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                      ">61
+                    </div>
+                    <input type="hidden" id="yeekee_name_61" value="จับยี่กีรอบที่ 61" />
+                    <input type="hidden" id="yeekee_status_61" value="3" />
+                    <input type="hidden" id="yeekee_result3_61" value="986" />
+                    <input type="hidden" id="yeekee_result2_61" value="96" />
+                    <div id="yeekee_result_62" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-result
+                                       yeekee-block-active ">62
+                    </div>
+                    <input type="hidden" id="yeekee_name_62" value="จับยี่กีรอบที่ 62" />
+                    <input type="hidden" id="yeekee_status_62" value="3" />
+                    <input type="hidden" id="yeekee_result3_62" value="107" />
+                    <input type="hidden" id="yeekee_result2_62" value="83" />
+                    <div id="yeekee_result_63" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">63
+                    </div>
+                    <input type="hidden" id="yeekee_name_63" value="จับยี่กีรอบที่ 63" />
+                    <input type="hidden" id="yeekee_status_63" value="1" />
+                    <input type="hidden" id="yeekee_result3_63" value="" />
+                    <input type="hidden" id="yeekee_result2_63" value="" />
+                    <div id="yeekee_result_64" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">64
+                    </div>
+                    <input type="hidden" id="yeekee_name_64" value="จับยี่กีรอบที่ 64" />
+                    <input type="hidden" id="yeekee_status_64" value="1" />
+                    <input type="hidden" id="yeekee_result3_64" value="" />
+                    <input type="hidden" id="yeekee_result2_64" value="" />
+                    <div id="yeekee_result_65" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">65
+                    </div>
+                    <input type="hidden" id="yeekee_name_65" value="จับยี่กีรอบที่ 65" />
+                    <input type="hidden" id="yeekee_status_65" value="1" />
+                    <input type="hidden" id="yeekee_result3_65" value="" />
+                    <input type="hidden" id="yeekee_result2_65" value="" />
+                    <div id="yeekee_result_66" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">66
+                    </div>
+                    <input type="hidden" id="yeekee_name_66" value="จับยี่กีรอบที่ 66" />
+                    <input type="hidden" id="yeekee_status_66" value="1" />
+                    <input type="hidden" id="yeekee_result3_66" value="" />
+                    <input type="hidden" id="yeekee_result2_66" value="" />
+                    <div id="yeekee_result_67" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">67
+                    </div>
+                    <input type="hidden" id="yeekee_name_67" value="จับยี่กีรอบที่ 67" />
+                    <input type="hidden" id="yeekee_status_67" value="1" />
+                    <input type="hidden" id="yeekee_result3_67" value="" />
+                    <input type="hidden" id="yeekee_result2_67" value="" />
+                    <div id="yeekee_result_68" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">68
+                    </div>
+                    <input type="hidden" id="yeekee_name_68" value="จับยี่กีรอบที่ 68" />
+                    <input type="hidden" id="yeekee_status_68" value="1" />
+                    <input type="hidden" id="yeekee_result3_68" value="" />
+                    <input type="hidden" id="yeekee_result2_68" value="" />
+                    <div id="yeekee_result_69" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">69
+                    </div>
+                    <input type="hidden" id="yeekee_name_69" value="จับยี่กีรอบที่ 69" />
+                    <input type="hidden" id="yeekee_status_69" value="1" />
+                    <input type="hidden" id="yeekee_result3_69" value="" />
+                    <input type="hidden" id="yeekee_result2_69" value="" />
+                    <div id="yeekee_result_70" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">70
+                    </div>
+                    <input type="hidden" id="yeekee_name_70" value="จับยี่กีรอบที่ 70" />
+                    <input type="hidden" id="yeekee_status_70" value="1" />
+                    <input type="hidden" id="yeekee_result3_70" value="" />
+                    <input type="hidden" id="yeekee_result2_70" value="" />
+                    <div id="yeekee_result_71" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">71
+                    </div>
+                    <input type="hidden" id="yeekee_name_71" value="จับยี่กีรอบที่ 71" />
+                    <input type="hidden" id="yeekee_status_71" value="1" />
+                    <input type="hidden" id="yeekee_result3_71" value="" />
+                    <input type="hidden" id="yeekee_result2_71" value="" />
+                    <div id="yeekee_result_72" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">72
+                    </div>
+                    <input type="hidden" id="yeekee_name_72" value="จับยี่กีรอบที่ 72" />
+                    <input type="hidden" id="yeekee_status_72" value="1" />
+                    <input type="hidden" id="yeekee_result3_72" value="" />
+                    <input type="hidden" id="yeekee_result2_72" value="" />
+                    <div id="yeekee_result_73" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">73
+                    </div>
+                    <input type="hidden" id="yeekee_name_73" value="จับยี่กีรอบที่ 73" />
+                    <input type="hidden" id="yeekee_status_73" value="1" />
+                    <input type="hidden" id="yeekee_result3_73" value="" />
+                    <input type="hidden" id="yeekee_result2_73" value="" />
+                    <div id="yeekee_result_74" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">74
+                    </div>
+                    <input type="hidden" id="yeekee_name_74" value="จับยี่กีรอบที่ 74" />
+                    <input type="hidden" id="yeekee_status_74" value="1" />
+                    <input type="hidden" id="yeekee_result3_74" value="" />
+                    <input type="hidden" id="yeekee_result2_74" value="" />
+                    <div id="yeekee_result_75" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">75
+                    </div>
+                    <input type="hidden" id="yeekee_name_75" value="จับยี่กีรอบที่ 75" />
+                    <input type="hidden" id="yeekee_status_75" value="1" />
+                    <input type="hidden" id="yeekee_result3_75" value="" />
+                    <input type="hidden" id="yeekee_result2_75" value="" />
+                    <div id="yeekee_result_76" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">76
+                    </div>
+                    <input type="hidden" id="yeekee_name_76" value="จับยี่กีรอบที่ 76" />
+                    <input type="hidden" id="yeekee_status_76" value="1" />
+                    <input type="hidden" id="yeekee_result3_76" value="" />
+                    <input type="hidden" id="yeekee_result2_76" value="" />
+                    <div id="yeekee_result_77" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">77
+                    </div>
+                    <input type="hidden" id="yeekee_name_77" value="จับยี่กีรอบที่ 77" />
+                    <input type="hidden" id="yeekee_status_77" value="1" />
+                    <input type="hidden" id="yeekee_result3_77" value="" />
+                    <input type="hidden" id="yeekee_result2_77" value="" />
+                    <div id="yeekee_result_78" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">78
+                    </div>
+                    <input type="hidden" id="yeekee_name_78" value="จับยี่กีรอบที่ 78" />
+                    <input type="hidden" id="yeekee_status_78" value="1" />
+                    <input type="hidden" id="yeekee_result3_78" value="" />
+                    <input type="hidden" id="yeekee_result2_78" value="" />
+                    <div id="yeekee_result_79" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">79
+                    </div>
+                    <input type="hidden" id="yeekee_name_79" value="จับยี่กีรอบที่ 79" />
+                    <input type="hidden" id="yeekee_status_79" value="1" />
+                    <input type="hidden" id="yeekee_result3_79" value="" />
+                    <input type="hidden" id="yeekee_result2_79" value="" />
+                    <div id="yeekee_result_80" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">80
+                    </div>
+                    <input type="hidden" id="yeekee_name_80" value="จับยี่กีรอบที่ 80" />
+                    <input type="hidden" id="yeekee_status_80" value="1" />
+                    <input type="hidden" id="yeekee_result3_80" value="" />
+                    <input type="hidden" id="yeekee_result2_80" value="" />
+                    <div id="yeekee_result_81" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">81
+                    </div>
+                    <input type="hidden" id="yeekee_name_81" value="จับยี่กีรอบที่ 81" />
+                    <input type="hidden" id="yeekee_status_81" value="1" />
+                    <input type="hidden" id="yeekee_result3_81" value="" />
+                    <input type="hidden" id="yeekee_result2_81" value="" />
+                    <div id="yeekee_result_82" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">82
+                    </div>
+                    <input type="hidden" id="yeekee_name_82" value="จับยี่กีรอบที่ 82" />
+                    <input type="hidden" id="yeekee_status_82" value="1" />
+                    <input type="hidden" id="yeekee_result3_82" value="" />
+                    <input type="hidden" id="yeekee_result2_82" value="" />
+                    <div id="yeekee_result_83" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">83
+                    </div>
+                    <input type="hidden" id="yeekee_name_83" value="จับยี่กีรอบที่ 83" />
+                    <input type="hidden" id="yeekee_status_83" value="1" />
+                    <input type="hidden" id="yeekee_result3_83" value="" />
+                    <input type="hidden" id="yeekee_result2_83" value="" />
+                    <div id="yeekee_result_84" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">84
+                    </div>
+                    <input type="hidden" id="yeekee_name_84" value="จับยี่กีรอบที่ 84" />
+                    <input type="hidden" id="yeekee_status_84" value="1" />
+                    <input type="hidden" id="yeekee_result3_84" value="" />
+                    <input type="hidden" id="yeekee_result2_84" value="" />
+                    <div id="yeekee_result_85" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">85
+                    </div>
+                    <input type="hidden" id="yeekee_name_85" value="จับยี่กีรอบที่ 85" />
+                    <input type="hidden" id="yeekee_status_85" value="1" />
+                    <input type="hidden" id="yeekee_result3_85" value="" />
+                    <input type="hidden" id="yeekee_result2_85" value="" />
+                    <div id="yeekee_result_86" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">86
+                    </div>
+                    <input type="hidden" id="yeekee_name_86" value="จับยี่กีรอบที่ 86" />
+                    <input type="hidden" id="yeekee_status_86" value="1" />
+                    <input type="hidden" id="yeekee_result3_86" value="" />
+                    <input type="hidden" id="yeekee_result2_86" value="" />
+                    <div id="yeekee_result_87" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">87
+                    </div>
+                    <input type="hidden" id="yeekee_name_87" value="จับยี่กีรอบที่ 87" />
+                    <input type="hidden" id="yeekee_status_87" value="1" />
+                    <input type="hidden" id="yeekee_result3_87" value="" />
+                    <input type="hidden" id="yeekee_result2_87" value="" />
+                    <div id="yeekee_result_88" style="font-size:0.85rem;" data="" class="yeekee-block number  yeekee-open
+                                      ">88
+                    </div>
+                    <input type="hidden" id="yeekee_name_88" value="จับยี่กีรอบที่ 88" />
+                    <input type="hidden" id="yeekee_status_88" value="1" />
+                    <input type="hidden" id="yeekee_result3_88" value="" />
+                    <input type="hidden" id="yeekee_result2_88" value="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="regurationModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">กฎกติกาและข้อบังคับ</h5>
+              </div>
+              <div class="modal-body">
+                <div class="terms" style="text-align: left;">
+                  <p style="font-size: 0.85rem;">
+                    ยินดีต้อนรับสู่เว็บเดิมพันออนไลน์ KOKOVA เพื่อให้คุณทราบถึงสิทธิประโยชน์ของสมาชิกกรุณาอ่านข้อตกลงอย่างละเอียดก่อนที่จะลงทะเบียนสมัครเป็นสมาชิกและใช้บริการ เมื่อสมัครสมาชิกแล้วทางเว็บจะถือว่า สมาชิกได้อ่านและยอมรับ &quot;เงื่อนไขและข้อตกลง&quot;
+                  </p>
+                  <h6 class="text-primary">การรักษาและช่วยเหลือการเดิมพันออนไลน์</h6>
+                  <p style="font-size: 0.85rem;">
+                    1). หากสมาชิกหลุดออกจากเว็บไซต์ระหว่างการเดิมพัน บัญชีของคุณจะไม่มีผลกระทบต่อผลลัพธ์ของการเดิมพัน
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    2). หากสมาชิกออกจากเว็บไซด์ระหว่างการเดิมพัน สมาชิกจะถูกออกจากระบบช่วงเวลาหนึ่ง จากนั้นสมาชิกสามารถเข้าสู่ระบบ ได้อีกครั้งตามปกติ
+                  </p>
+                  <h6 class="text-primary">การให้ความคุ้มครอง</h6>
+                  <p style="font-size: 0.85rem;">
+                    การจัดเตรียมระบบที่มีประสิทธิภาพ ความรวดเร็วและการบริการลูกค้าที่เป็นมิตร ถ้าหากคุณมีคำถามหรือคำแนะนำใด ๆ กรุณาอย่าลังเลใจที่จะโทรศัพท์มาทางฝ่ายบริการลูกค้าซึ่งจะมีให้บริการตลอด 24 ชั่วโมงทุกวันไม่มีวันหยุดและทางเราจะตอบกลับอย่างรวดเร็วที่สุด ขอรับรองว่าจะรักษาข้อมูลส่วนตัวของคุณไว้เป็นความลับอย่างปลอดภัย
+                  </p>
+                  <h6 class="text-primary">ข้อตกลงในการเดิมพัน</h6>
+                  <p style="font-size: 0.85rem;">
+                    1). การเดิมพันจะต้องอยู่ใน &quot;ระยะเวลาที่กำหนด&quot; มิฉะนั้นจะถือว่าการเดิมครั้งนั้นเป็น &quot;โมฆะ&quot; ถ้าการเดิมพันได้มีการยกเลิกหรือหยุดพักชั่วคราว เนื่องจากเหตุผลใดๆก็ตามก่อนการเล่น การเดิมพันครั้งนั้นจะถือว่าเป็น &quot;โมฆะ&quot; และทางบริษัทจะคืนเครดิตให้กับสมาชิก
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    2). เป็นความรับผิดชอบของสมาชิกที่จะคอยดูผลลัพธ์ จากช่องหน้าต่างที่แสดงให้เห็นถึงผลการเดิมพันแพ้หรือชนะ ทางบริษัทจะยึดถือข้อมูล &quot;รายละเอียดการวางเดิมพัน&quot; ของสมาชิก ในกรณีที่สมาชิกมีความสงสัย และต้องการตรวจสอบข้อมูลในการคำนวณของการเดิมพันนั้นๆ
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    3). ถ้าหากเกิดความผิดพลาดของระบบระหว่างการเดิมพันหรือความผิดพลาดโดยไม่ได้เจตนาของพนักงาน ทางบริษัทขอสงวนสิทธ์ที่จะแก้ไขผลลัพธ์ให้ถูกต้อง และจะมีการพิมพ์ข้อความที่ได้มีการแก้ไขเผยแพร่ไว้ที่แถบตัววิ่งในหน้าเว็บไซต์ บริษัทจะไม่มีการแจ้งสมาชิกเป็นการส่วนตัว
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    4). เป็นความรับชอบของสมาชิกที่จะทำให้แน่ใจว่าชื่อผู้ใช้และรหัสผ่านสำหรับเข้าเว็ไซต์นั้นถูกต้อง และกรุณาเปลี่ยนรหัสผ่านของสมาชิกอย่างน้อยเดือนละครั้ง เพื่อความปลอดภัย ถ้าหากคุณพบหรือสงสัยว่ามีผู้อื่นได้เข้าไปเล่นในบัญชีของคุณโดยไม่รับอนุญาต กรุณา แจ้งตัวแทนของคุณทันทีเพื่อเปลี่ยนรหัสส่วนตัว (หากมีการเดิมพันก่อนที่จะเปลี่ยนรหัสเดิมจะถือว่าการเดิมพันนั้นเป็นผล)
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    5). ก่อนเริ่มการเดิมพันแต่ละครั้งสมาชิกควรจะตรวจสอบวงเงินของคุณเสียก่อน ถ้าหากคุณมีข้อสงสัยใดๆเกี่ยวกับวงเงิน กรุณาแจ้งตัวแทนของคุณสมาชิกทันที
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    6). ในกรณีที่เหตุการณ์ไม่คาดคิดเกิดขึ้น อย่างเช่น ข้อมูลสูญหายเนื่องจากระบบอินเตอร์เน็ตขัดข้อง ทางบริษัทจะมีการประกาศให้รู้ถึงสาเหตุและวิธีการแก้ปัญหา
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    7). หากทีมงานตรวจพบว่ามีกลุ่มสมาชิกใด ใช้ช่องโหว่ของโปรโมชั่นเพื่อแสวงกำไร ทีมงานสามารถระงับสมาชิกนั้นได้ทันที โดยไม่ต้องแจ้งล่วงหน้า
+                  </p>
+                  <h6 class="text-primary">ระบบการรักษาความปลอดภัย</h6>
+                  <p style="font-size: 0.85rem;">
+                    1). ข้อมูลที่ทางสมาชิกให้มาในการเปิดบัญชีจะถูกเก็บเป็นความลับขั้นสูงสุด ทางบริษัทจะไม่เผยแพร่ข้อมูลนี้ให้กับบุคคลที่สามหรือองค์กรอื่นๆ ไม่ว่าจะเป็นบัญชีเบอร์โทรศัพท์หรือข้อมูลอื่นๆ ที่ทางสมาชิกกรอกในการสมัคร ข้อมูลเหล่านี้จะใช้ในจุดมุ่งหมายที่ตั้งใจเอาไว้ให้เท่านั้น เช่น การส่งเช็คเงินสดสำหรับผู้ชนะหรือข้อมูลอื่นๆตามที่สมาชิกร้องขอ
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    2). บริษัทได้ใช้วิธีรักษาข้อมูลที่มีประสิทธิภาพมากที่สุดเพื่อทำให้คุณแน่ใจในความปลอดภัยของข้อมูลของคุณ เพื่อป้องกันไม่ให้ข้อมูลรั่วไหลหรือนำไปใช้อย่างไม่ถูกต้อง ถ้าคุณมีข้อสงสัยใดๆที่เกี่ยวข้องกับการรักษาความลับของข้อมูล กรุณาติดต่อฝ่ายบริการลูกค้าพวกเรายินดีให้บริการ
+                  </p>
+                  <h6 class="text-primary">ข้อบังคับ</h6>
+                  <p style="font-size: 0.85rem;">
+                    1). ลูกค้าที่สมัครเข้ามาหลายยูสเพื่อรับโปรโมชั่นและใช้สัญญานอินเตอร์เน็ตมาจากที่เดียวกันหรือมีพฤติกรรมล่าโปรโมชั่นเพื่อหวังทำกำไร หากทางเว็ปตรวจพบจะไม่สามารถถอนได้ทุกกรณี
+                  </p>
+                  <p style="font-size: 0.85rem;">
+                    2). หากทางเว็ปตรวจพบสมาชิกใช้โปรแกรมทุกชนิดช่วยเล่นในการวางเดิมพันหรือเล่นสองฝั่งในเกมเดียวกันเพื่อหวังทำกำไรจากค่าคอม ส่วนต่าง โบนัส หรือทำการเก็บสะสมฟรีสปินจะทำการยึดเครดิตเหลือ 0 ในทุกกรณี (คำตัดสินของทางเว็ปถือเป็นที่สิ้นสุด)
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+                  ปิด
                 </button>
               </div>
             </div>
           </div>
-          <!-- Navbar items -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-planet"></i>
-                <span class="nav-link-inner--text">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-circle-08"></i>
-                <span class="nav-link-inner--text">Register</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-key-25"></i>
-                <span class="nav-link-inner--text">Login</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">
-                <i class="ni ni-single-02"></i>
-                <span class="nav-link-inner--text">Profile</span>
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </nav>
-    <!-- Header -->
-    <div class="header bg-gradient-primary py-7 py-lg-8">
-      <div class="container">
-        <div class="header-body text-center mb-7">
-          <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-6">
-              <h1 class="text-white">Welcome!</h1>
-              <p class="text-lead text-light">Login or create new account in your project</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="separator separator-bottom separator-skew zindex-100">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
-    </div>
-    <!-- Page content -->
-    <div class="container mt--8 pb-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-7">
-          <div class="card bg-secondary shadow border-0">
-            <div class="card-header bg-transparent pb-5">
-              <div class="text-muted text-center mt-2 mb-3"><small>Sign in with</small></div>
-              <div class="btn-wrapper text-center">
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"><img src="https://raw.githack.com/creativetimofficial/argon-dashboard/gh-pages/assets-old/img/icons/common/github.svg"></span>
-                  <span class="btn-inner--text">Github</span>
+        <div class="modal fade" id="langModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="fal fa-globe"></h4>
+                <h5 class="modal-title">เลือกภาษาของคุณ</h5>
+              </div>
+              <div class="modal-body">
+                <a class="btn btn-block btn-ghost" href="https://ttokbet.com/language/th">
+                  <img src="https://ttokbet.com/assets/img/flag/mini-flag-th.svg" class="mini-flag"> ภาษาไทย
                 </a>
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"><img src="https://raw.githack.com/creativetimofficial/argon-dashboard/gh-pages/assets-old/img/icons/common/google.svg"></span>
-                  <span class="btn-inner--text">Google</span>
+                <a class="btn btn-block btn-ghost" href="https://ttokbet.com/language/en">
+                  <img src="https://ttokbet.com/assets/img/flag/mini-flag-us.svg" class="mini-flag"> English
                 </a>
               </div>
-            </div>
-            <div class="card-body px-lg-5 py-lg-5">
-              <div class="text-center text-muted mb-4">
-                <small>Or sign in with credentials</small>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">ปิด</button>
               </div>
-              <form role="form">
-                <div class="form-group mb-3">
-                  <div class="input-group input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Email" type="email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Password" type="password">
-                  </div>
-                </div>
-                <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                  <label class="custom-control-label" for=" customCheckLogin">
-                    <span class="text-muted">Remember me</span>
-                  </label>
-                </div>
-                <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4">Sign in</button>
-                </div>
-              </form>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col-6">
-              <a href="#" class="text-light"><small>Forgot password?</small></a>
-            </div>
-            <div class="col-6 text-right">
-              <a href="#" class="text-light"><small>Create new account</small></a>
-            </div>
-          </div>
+        </div>
+        <div class="push">
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer class="py-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-xl-between">
-        <div class="col-xl-6">
-          <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2019 <a href="https://www.creative-tim.com/product/argon-dashboard" class="font-weight-bold ml-1" target="_blank">AUTO Business</a>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>&copy;Copyright 2022. <strong></strong> All Right Reserved.</p>
+            </div>
+
           </div>
         </div>
-        <div class="col-xl-6">
-          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">THANA Business</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  </body>
-</div>
-</ion-content>
+      </footer>
+      <script src="https://ttokbet.com/assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://ttokbet.com/assets/js/bootstrap.min.js"></script>
+      <script src="https://ttokbet.com/assets/js/formvalidation/FormValidation.min.js"></script>
+      <script src="https://ttokbet.com/assets/js/formvalidation/plugins/Bootstrap.min.js"></script>
+      <script src="https://ttokbet.com/assets/js/formvalidation/locales/th_TH.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" integrity="sha512-zlWWyZq71UMApAjih4WkaRpikgY9Bz1oXIW5G0fED4vk14JjGlQ1UmkGM392jEULP8jbNMiwLWdM8Z87Hu88Fw==" crossorigin="anonymous"></script>
+      <script src="https://ttokbet.com/assets/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script>
+        $(".regular").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [{
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            }
+          ]
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $(".yeekee-block").click(function(e) {
+            $('#yeekee_block_group').find('.yeekee-block').removeClass('yeekee-block-active');
+            $('#' + e.target.id).addClass('yeekee-block-active');
+            var id = $('#' + e.target.id).html().trim();
+            var status = $('#yeekee_status_' + id).val();
+            $('#yeekee_name_result').html($('#yeekee_name_' + id).val());
+            if (status == '0') {
+              var shtml1 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#48526E;">ไม่มีรอบ</strong>';
+              var shtml2 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#48526E;">ไม่มีรอบ</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            } else if (status == '1') {
+              var shtml1 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#b9efb7;">เปิดรอบ</strong>';
+              var shtml2 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#b9efb7;">เปิดรอบ</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            } else if (status == '2') {
+              var shtml1 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#ffdea2;">รอผล</strong>';
+              var shtml2 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#ffdea2;">รอผล</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            } else if (status == '3') {
+              var shtml1 = '<strong class="lotto-prize-number text-center">' + $('#yeekee_result3_' + id).val() + '</strong>';
+              var shtml2 = '<strong class="lotto-prize-number text-center">' + $('#yeekee_result2_' + id).val() + '</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            } else if (status == '4') {
+              var shtml1 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#FF5160;">คืนโพย</strong>';
+              var shtml2 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#FF5160;">คืนโพย</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            } else if (status == '5') {
+              var shtml1 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#FF5160;">คืนโพย</strong>';
+              var shtml2 = '<strong class="text-center" style="display: block;font-size:0.85rem;color:#FF5160;">คืนโพย</strong>';
+              $('#yeekee_show_result1').html(shtml1);
+              $('#yeekee_show_result2').html(shtml2);
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function(e) {
+          var fv = FormValidation.formValidation(
+            document.getElementById('form-login'), {
+              fields: {
+                username: {
+                  validators: {
+                    notEmpty: {
+                      message: 'โปรดระบุชื่อผู้ใช้'
+                    },
+                    stringLength: {
+                      min: 8,
+                      max: 16,
+                      message: 'โปรดระบุชื่อผู้ใช้ระหว่าง 8 ถึง 16 ตัวอักษร'
+                    },
+                    regexp: {
+                      regexp: /^[a-zA-Z0-9_]+$/,
+                      message: 'โปรดระบุชื่อผู้ใช้ให้ตรงกับรูปแบบที่กำหนด'
+                    }
+                  }
+                },
+                password: {
+                  validators: {
+                    notEmpty: {
+                      message: 'โปรดระบุรหัสผ่าน'
+                    },
+                    stringLength: {
+                      min: 4,
+                      max: 24,
+                      message: 'โปรดระบุรหัสผ่านระหว่าง 4 ถึง 24 ตัวอักษร'
+                    }
+                  }
+                }
+              },
+              plugins: {
+                trigger: new FormValidation.plugins.Trigger(),
+                bootstrap: new FormValidation.plugins.Bootstrap(),
+                submitButton: new FormValidation.plugins.SubmitButton(),
+                defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
+                icon: new FormValidation.plugins.Icon({
+                  valid: 'fa fa-check',
+                  invalid: 'fa fa-times',
+                  validating: 'fa fa-refresh'
+                }),
+              }
+            }
+          );
+        });
+      </script>
+</body>
+
+</html>
